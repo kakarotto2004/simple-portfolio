@@ -1,11 +1,60 @@
+<!-- https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Template</title>
+
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <nav>
+            <ul class="flex">
+                <div class="flex uppercase">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i> 
+                            <span>home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user-large"></i> 
+                            <span>about</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-code-fork"></i> 
+                            <span>portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-envelope"></i> 
+                            <span>contact</span>
+                        </a>
+                    </li>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+
+        <header class="w-full h-screen bg-[url('/imgs/parallax1.jpg')] bg-cover">
+            <h1>my website logo</h1>
+        </header>
+    </div>
 </body>
 </html>

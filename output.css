@@ -553,3 +553,55 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.mt-\[110px\] {
+  margin-top: 110px;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-\[--colorSth\] {
+  background-color: var(--colorSth);
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\'\/imgs\/paralax1\.jpeg\'\)\] {
+  background-image: url('/imgs/paralax1.jpeg');
+}
+
+.bg-\[url\(\'\/imgs\/parallax1\.jpeg\'\)\] {
+  background-image: url('/imgs/parallax1.jpeg');
+}
+
+.bg-\[url\(\'\/imgs\/parallax1\.jpg\'\)\] {
+  background-image: url('/imgs/parallax1.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
