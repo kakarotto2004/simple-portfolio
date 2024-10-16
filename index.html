@@ -11,11 +11,19 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body>
+<body class="text-neutral-600 min-h-[200vh]">
     <div class="wrapper">
-        <nav>
-            <ul class="flex px-3 py-2">
-                <div class="flex uppercase">
+        <nav class="flex justify-start">
+            <ul class="md:flex uppercase">
+                <div class="pl-3 pt-2" id="burgerBg">
+                    <a href="#" class="md:hidden" id="burger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <a href="#" class="hidden md:hidden" id="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="hidden md:flex px-3 py-3 bg-gray-100 md:bg-transparent" id="menu">
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-house"></i> 
@@ -41,20 +49,16 @@
                         </a>
                     </li>
                 </div>
-                <div>
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="#" class="hidden">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </div>
             </ul>
         </nav>
 
-        <header class="w-full h-screen bg-[url('/imgs/parallax1.jpg')] bg-cover bg-fixed bg-no-repeat bg-center">
-            <h1>my website logo</h1>
+        <header class="absolute top-0 left-0 -z-10 w-full h-3/6 md:h-full bg-[url('/imgs/parallax1.jpg')] bg-cover bg-scroll md:bg-fixed bg-no-repeat bg-center">
+            <div class="w-full h-full flex flex-wrap justify-center content-center bg-gray-400 bg-opacity-30">
+                <h1 class="max-w-72 md:max-w-fit bg-gray-800 bg-opacity-80 px-5 py-3 uppercase text-3xl text-center text-amber-50 tracking-widest">my website logo</h1>
+            </div>
         </header>
     </div>
+
+    <script src="menu.js"></script>
 </body>
 </html>
